@@ -110,10 +110,9 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://te.legra.ph/file/074ef8d210745e3380baf.jpg"
+EMI_IMG = "https://telegra.ph/file/dc5ad4e5065da22c27fe7.mp4"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @shado_hackers \
+DONATE_STRING = """Heya, glad to hear you want to donate! 
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -229,7 +228,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi👋 I'm Emli robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi👋 I'm Ansi👶 Baby bot🌹.</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
