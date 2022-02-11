@@ -82,27 +82,27 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm Emli anime-theme management bot [✨](https://te.legra.ph/file/074ef8d210745e3380baf.jpg)
+✪ I'm Ansi👶 Baby bot🌹[✨](https://telegra.ph/file/0c5c5faf6c46dc00939f9.jpg)
 ────────────────────────
-× *Bot Uptime:* `{}`
-× `{}` *users, across* `{}` *chats*
+☢︎︎ *Ansi👶 Uptime:* `{}`
+☢︎︎ `{}` *users, across* `{}` *chats*
 ────────────────────────
 ✪ Hit the /help to see available commands.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Emli Robot", callback_data="emli_"),
+        InlineKeyboardButton(text="About Ansi👶 Robot", callback_data="emli_"),
     ],
     [
-        InlineKeyboardButton(text="Help", callback_data="help_back"),
+        InlineKeyboardButton(text="🌹Help🌹", callback_data="help_back"),
         InlineKeyboardButton(
-            text="support!​​", url="t.me/OMG_info"
+            text="❤️Owner❤️", url="https://t.me/jackabout"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Emli To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="👶 Add  Ansi 💖To Your Group 👶", url="t.me/ansi_Ro_bot?startgroup=new"),
     ],
 ]
 
