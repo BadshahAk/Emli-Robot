@@ -60,9 +60,9 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Emli AI Already Activated In This Chat")
+            await lel.edit("Ansi AI Already Activated In This Chat")
             return
-        await lel.edit(f"Emli AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"Ansi AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
@@ -115,11 +115,11 @@ async def hmm(client, message):
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("aco", "emli")
-        response = response.replace("Aco", "Emli")
-        response = response.replace("Luna", "Emli")
-        response = response.replace("Luna", "emli")
-        response = response.replace("female", "male")
+        response = response.replace("aco", "ansi")
+        response = response.replace("Aco", "Ansi")
+        response = response.replace("Luna", "Ansi")
+        response = response.replace("Luna", "ansi")
+        response = response.replace("female", "nsi")
         pro = response
         try:
             await pbot.send_chat_action(message.chat.id, "typing")
@@ -174,11 +174,11 @@ async def hmm(client, message):
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("aco", "emli")
-        response = response.replace("Aco", "emli")
-        response = response.replace("Luna", "emli")
-        response = response.replace("Luna", "aries")
-        response = response.replace("female", "male")
+        response = response.replace("aco", "ansi")
+        response = response.replace("Aco", "ansi")
+        response = response.replace("Luna", "ansi")
+        response = response.replace("Luna", "Ansi")
+        response = response.replace("female", "nsi")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -345,4 +345,4 @@ __help__ = """
 
 """
 
-__mod_name__ = "chatbot"
+__mod_name__ = "chatbot🎭"
