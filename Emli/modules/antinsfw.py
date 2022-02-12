@@ -9,7 +9,7 @@ from Emli.utils.permissions import adminsOnly
 from Emli.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
 from Emli.utils.filter_groups import nsfw_detect_group
 
-__mod_name__ = "Anti-NSFW"
+__mod_name__ = "Anti-NSFW🚫"
 
 async def get_file_id_from_message(message):
     file_id = None
