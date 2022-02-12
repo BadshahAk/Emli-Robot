@@ -45,4 +45,4 @@ async def crypto(_, message):
     )
     await m.edit(text, reply_markup=btn)
 
-__mod_name__ = "Crypto"
+__mod_name__ = "Crypto💰"
