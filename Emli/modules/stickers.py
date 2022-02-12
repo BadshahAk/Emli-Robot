@@ -574,7 +574,7 @@ def delsticker(update, context):
             "Please reply to sticker message to del sticker"
         )
 
-__mod_name__ = "Stickers"
+__mod_name__ = "Stickers🦧"
 
 __help__ = """
 *Help menu for stickers tools*
