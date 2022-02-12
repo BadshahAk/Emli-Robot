@@ -255,7 +255,7 @@ __help__ = """
  • `/delrepo <name>`: deletes a repo shortcut
 """
 
-__mod_name__ = "GitHub"
+__mod_name__ = "GitHub🏆"
 
 
 RELEASE_HANDLER = DisableAbleCommandHandler(
