@@ -502,7 +502,7 @@ __help__ = """
 ❂ /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just punch.
 """
 
-__mod_name__ = "Warning"
+__mod_name__ = "Warning🤬"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.chat_type.groups, run_async=True)
 RESET_WARN_HANDLER = CommandHandler(
