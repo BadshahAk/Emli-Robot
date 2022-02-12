@@ -1,4 +1,4 @@
-__mod_name__ = "Tools"
+__mod_name__ = "Tools🛠️"
 
 __help__ = """
 *NIGHT MOOD*
