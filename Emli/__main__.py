@@ -91,9 +91,8 @@ PM_START_TEXT = """
 """
 
 buttons = [
-    [
-        InlineKeyboardButton(text="About Ansi👶 Robot", callback_data="emli_"),
-        InlineKeyboardButton(text="💞Music💞", url="https://telegra.ph/Ansi-Music-02-12"),
+    [        
+        InlineKeyboardButton(text="💞co-owner💞", url="t.me/Its_andy_ki_jaan"),
     ],
     [
         InlineKeyboardButton(text="🌹Help🌹", callback_data="help_back"),
