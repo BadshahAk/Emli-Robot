@@ -92,13 +92,13 @@ PM_START_TEXT = """
 
 buttons = [
     [        
-        InlineKeyboardButton(text="💞co-owner💞", url="t.me/Its_andy_ki_jaan"),
+        InlineKeyboardButton(text="💞Owner💞", url="t.me/its_pandit_Andy"),
+        InlineKeyboardButton(
+            text="❤️owner❤️", url="t.me/Its_andy_ki_jaan"
+        ),
     ],
     [
-        InlineKeyboardButton(text="🌹Help🌹", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="❤️Owner❤️", url="https://t.me/jackabout"
-        ),
+        InlineKeyboardButton(text="🌹Help🌹", callback_data="help_back"),        
     ],
     [
         InlineKeyboardButton(
