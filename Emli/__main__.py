@@ -94,7 +94,7 @@ buttons = [
     [        
         InlineKeyboardButton(text="💞Owner💞", url="t.me/its_pandit_Andy"),
         InlineKeyboardButton(
-            text="❤️owner❤️", url="t.me/Its_andy_ki_jaan"
+            text="❤️co-owner❤️", url="t.me/Its_andy_ki_jaan"
         ),
     ],
     [
@@ -108,10 +108,17 @@ buttons = [
 
 
 HELP_STRINGS = """
-ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..
-ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [❤️](https://telegra.ph/file/904cb2e499472d466d3e9.jpg)"""
-
-EMI_IMG = "https://telegra.ph/file/dc5ad4e5065da22c27fe7.mp4"
+*{} is here! 
+I Use My Powers To Help Admins To Manage Their Groups! 
+*Main* commands available :
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+ • /settings:
+   • in PM: will send you your settings for all supported modules.
+   • in a group: will redirect you to pm, with all that chat's settings.
+For all command use /* [❤️](https://te.legra.ph/file/88686fd89889721fb74c9.jpg) *!* 
+"""
+START_IMG = "https://telegra.ph/file/dc5ad4e5065da22c27fe7.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate! 
  Supporting isnt always financial! \
@@ -228,10 +235,12 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
-        update.effective_message.reply_text(
-            f"<b>Hi👋 I'm Ansi👶 Baby bot🌹.</b>\n<b>Started working since:</b> <code>{uptime}</code>",
-            parse_mode=ParseMode.HTML
-       )
+        update.effective_message.reply_video(
+            START_IMG, caption= "<code>Hi👋 I'm Ansi👶 Baby bot🌹\nI am Awake Since</code>: <code>{}</code>".format(
+                uptime            
+            ),
+            parse_mode=ParseMode.HTML,
+        )
 
 
 def error_handler(update, context):
