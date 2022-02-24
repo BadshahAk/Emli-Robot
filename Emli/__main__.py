@@ -92,17 +92,14 @@ PM_START_TEXT = """
 
 buttons = [
     [        
-        InlineKeyboardButton(text="💞Owner💞", url="t.me/its_pandit_Andy"),
+        InlineKeyboardButton(text="𝙰𝙱𝙾𝚄𝚃", url="t.me/its_pandit_Andy"),
         InlineKeyboardButton(
-            text="❤️co-owner❤️", url="t.me/Its_andy_ki_jaan"
+            text="𝚂𝚄𝙿𝙿𝙾𝚁𝚃", url="t.me/Its_andy_ki_jaan"
         ),
     ],
     [
-        InlineKeyboardButton(text="🌹Help🌹", callback_data="help_back"),        
-    ],
-    [
-        InlineKeyboardButton(
-            text="👶 Add  Ansi 💖To Your Group 👶", url="t.me/ansi_Ro_bot?startgroup=new"),
+        InlineKeyboardButton(text="𝙷𝙴𝙻𝙿", callback_data="help_back"),
+        InlineKeyboardButton(text="𝙰𝙳𝙳 𝙼𝙴🙋‍♀️", url="t.me/ansi_Ro_bot?startgroup=new"),        
     ],
 ]
 
@@ -790,10 +787,10 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Emli Robot Started!**
+                f"""**𝙲𝚄𝚃𝙴 𝙰𝙽𝚂𝙷𝙸 𝙸𝚉 𝚆𝙾𝙺𝙴-𝚄𝙿 𝙰𝙶𝙰𝙸𝙽🙋‍♀️🙋‍♀️!**
 
-**Python:** `{memek()}`
-**Telegram Library:** `v{peler}`""",
+**𝙼𝚈 𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽👻:** `{memek()}`
+**𝚄𝙼 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙻𝙸𝙱𝚁𝙰𝚁𝚈👻:** `v{peler}`""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
