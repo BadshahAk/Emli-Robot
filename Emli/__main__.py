@@ -427,7 +427,7 @@ def emli_about_callback(update, context):
         query.message.edit_text(
             text=f"「𝙼𝙾𝙸 𝙼𝙾𝙼 𝙸𝚉 𝙷𝙰𝚁𝙴 𝙶𝚄𝚈𝚂❤︎」!"
             f"𝙽𝙰𝙼𝙴 : 𝙽𝙴𝙷𝙰✰"
-            𝚏"𝙸𝙼𝙰𝙶𝙴 : 𝙲𝙾𝙾𝙻 𝙶𝙸𝚁𝙻☆",",
+            𝚏"𝙸𝙼𝙰𝙶𝙴 : 𝙲𝙾𝙾𝙻 𝙶𝙸𝚁𝙻☆",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[
