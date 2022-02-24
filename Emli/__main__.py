@@ -411,7 +411,7 @@ def emli_about_callback(update, context):
         query.message.edit_text(
             text=f"「𝙼𝙾𝙸 𝙳𝙰𝙳 𝙸𝚉 𝙷𝙰𝚁𝙴 𝙶𝚄𝚈𝚂❤︎」\n"
                      f"\n𝙽𝙰𝙼𝙴 : 𝙰𝙽𝙳𝚈✰"
-                     𝚏"\n𝙸𝙼𝙰𝙶𝙴 : [𝙲𝙾𝙾𝙻 𝙱𝙾𝙸☆](https://t.me/its_pandit_Andy)",
+                     f"\n𝙸𝙼𝙰𝙶𝙴 : [𝙲𝙾𝙾𝙻 𝙱𝙾𝙸☆](https://t.me/its_pandit_Andy)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -427,7 +427,7 @@ def emli_about_callback(update, context):
         query.message.edit_text(
             text=f"「𝙼𝙾𝙸 𝙼𝙾𝙼 𝙸𝚉 𝙷𝙰𝚁𝙴 𝙶𝚄𝚈𝚂❤︎」\n"
                      f"\n𝙽𝙰𝙼𝙴 : 𝙽𝙴𝙷𝙰✰"
-                     𝚏"\n𝙸𝙼𝙰𝙶𝙴 : 𝙲𝙾𝙾𝙻 𝙶𝙸𝚁𝙻☆",
+                     f"\n𝙸𝙼𝙰𝙶𝙴 : 𝙲𝙾𝙾𝙻 𝙶𝙸𝚁𝙻☆",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[
