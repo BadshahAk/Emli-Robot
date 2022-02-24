@@ -93,13 +93,11 @@ PM_START_TEXT = """
 buttons = [
     [        
         InlineKeyboardButton(text="✨𝙰𝙱𝙾𝚄𝚃", callback_data="emli_"),
-        InlineKeyboardButton(
-            text="☎️𝚂𝚄𝙿𝙿𝙾𝚁𝚃", callback_data="emli_support"
-        ),
+        InlineKeyboardButton(text="🙋‍♀️𝙰𝙳𝙳 𝙼𝙴", url="t.me/ansi_Ro_bot?startgroup=new"),
     ],
     [
         InlineKeyboardButton(text="🚸𝙷𝙴𝙻𝙿", callback_data="help_back"),
-        InlineKeyboardButton(text="🙋‍♀️𝙰𝙳𝙳 𝙼𝙴", url="t.me/ansi_Ro_bot?startgroup=new"),        
+        InlineKeyboardButton(text="☎️𝚂𝚄𝙿𝙿𝙾𝚁𝚃", callback_data="emli_support"),        
     ],
 ]
 
@@ -372,7 +370,7 @@ def emli_about_callback(update, context):
     query = update.callback_query
     if query.data == "emli_":
         query.message.edit_text(
-            text="๏ ɪ'ᴍ *[ᴀɴsɪ](https://t.me/ansi_Ro_Bot)*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ."
+            text="๏ ɪ'ᴍ *ᴀɴsɪ*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ."
             "\n• ɪ ᴄᴀɴ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs."
             "\n• ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜsᴇʀs ᴡɪᴛʜ ᴄᴜsᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇs ᴀɴᴅ ᴇᴠᴇɴ sᴇᴛ ᴀ ɢʀᴏᴜᴘ's ʀᴜʟᴇs."
             "\n• ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ sʏsᴛᴇᴍ."
