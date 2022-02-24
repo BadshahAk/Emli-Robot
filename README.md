@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://te.legra.ph/file/074ef8d210745e3380baf.jpg">
+  <img src="https://te.legra.ph/file/520b104af857b36432b12.jpg">
 </p>
 
 <h4><p align="center"> EMLI ROBOT </p></h4>
