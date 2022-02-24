@@ -81,13 +81,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm Ansi👶 Baby bot🌹[✨](https://telegra.ph/file/0c5c5faf6c46dc00939f9.jpg)
+*𝐇𝐄𝐋𝐋𝐎 {} !*
+✪ 𝙸['](https://telegra.ph/file/511a7fe4fc1159387589b.mp4)𝙼 𝙲𝚄𝚃𝙴 𝚁𝙾𝙱𝙾 𝙱𝙰𝙱𝚈 𝙰𝙽𝚂𝙷𝙸 𝙸𝚂 𝙷𝙴𝚁𝙴🙋‍♀️🌹\n
 ️◁───ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ❚❚ꔸꔸꔸꔸꔸꔸꔸꔸꔸꔸ───▷
-☢︎︎ *Ansi👶 Uptime:* `{}`
-☢︎︎ `{}` *users, across* `{}` *chats*
+☢︎︎ *𝙰𝙽𝚂𝙷𝙸'𝚂👶𝚆𝙰𝙺𝙸𝙽𝙶-𝚃𝙸𝙼𝙴:* `{}`
+☢︎︎ `{}` *𝙿𝙴𝙾𝙿𝙻𝙴𝚂, 𝙰𝙲𝚁𝙾𝚂𝚂* `{}` *𝙶𝚁𝙾𝚄𝙿𝚂*
 ️●───────❚❚───────●
-✪ Hit the /help to see available commands.
+✪ 𝚆𝙰𝙽𝙰 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝙼𝙾𝚁𝙴 𝚃𝙷𝙴𝙽 𝚃𝚈𝙿𝙴 /help\n𝙾𝚁 𝙹𝚄𝚂𝚃 𝚃𝙰𝙿 𝙾𝙽 𝙱𝚄𝚃𝚃𝙾𝙽𝚂 𝙶𝙸𝚅𝙴𝙽 𝙱𝙴𝙻𝙾𝚆🤔!!..
 """
 
 buttons = [
@@ -108,17 +108,16 @@ buttons = [
 
 
 HELP_STRINGS = """
-*{} is here! 
-I Use My Powers To Help Admins To Manage Their Groups! 
-*Main* commands available :
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [❤️](https://te.legra.ph/file/88686fd89889721fb74c9.jpg) *!* 
+*Aɴsʜɪ ɪs ʜᴇʀᴇ 🙋‍♀️! 
+ɪ ᴜsᴇ ᴍʏ ᴘᴏᴡᴇʀs ᴛᴏ ʜᴇʟᴘ ᴀᴅᴍɪɴs ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs! 
+*ᴍᴀɪɴ* ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ :
+ • /ʜᴇʟᴘ: ᴘᴍ's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ.
+ • /ʜᴇʟᴘ <ᴍᴏᴅᴜʟᴇ ɴᴀᴍᴇ>: ᴘᴍ's ʏᴏᴜ ɪɴꜰᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
+ • /sᴇᴛᴛɪɴɢs:
+ • ɪɴ ᴘᴍ: ᴡɪʟʟ sᴇɴᴅ ʏᴏᴜ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ꜰᴏʀ ᴀʟʟ sᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇs.
+ • ɪɴ ᴀ ɢʀᴏᴜᴘ: ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ᴄʜᴀᴛ's sᴇᴛᴛɪɴɢs
 """
-START_IMG = "https://telegra.ph/file/dc5ad4e5065da22c27fe7.mp4"
+ANSHI_START_LOGO = "https://telegra.ph/file/dc5ad4e5065da22c27fe7.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate! 
  Supporting isnt always financial! \
@@ -236,10 +235,17 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code>Hi👋 I'm Ansi👶 Baby bot🌹\nI am Awake Since</code>: <code>{}</code>".format(
+            ANSHI_START_LOGO, caption= "<code>Hi👋 I'm Ansi👶 Baby bot🌹\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime            
             ),
             parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton(text="❤︎Mᴏᴍ♡︎", url="t.me/Its_andy_ki_jaan"),
+                     InlineKeyboardButton(text="♡︎Dᴀᴅ❤︎", url="https://t.me/its_pandit_Andy"),
+                    ],
+                ],
+            ),
         )
 
 
