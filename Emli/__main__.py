@@ -92,14 +92,14 @@ PM_START_TEXT = """
 
 buttons = [
     [        
-        InlineKeyboardButton(text="𝙰𝙱𝙾𝚄𝚃", url="t.me/its_pandit_Andy"),
+        InlineKeyboardButton(text="✨𝙰𝙱𝙾𝚄𝚃", callback_data="emli_"),
         InlineKeyboardButton(
-            text="𝚂𝚄𝙿𝙿𝙾𝚁𝚃", url="t.me/Its_andy_ki_jaan"
+            text="☎️𝚂𝚄𝙿𝙿𝙾𝚁𝚃", callback_data="emli_support"
         ),
     ],
     [
-        InlineKeyboardButton(text="𝙷𝙴𝙻𝙿", callback_data="help_back"),
-        InlineKeyboardButton(text="𝙰𝙳𝙳 𝙼𝙴🙋‍♀️", url="t.me/ansi_Ro_bot?startgroup=new"),        
+        InlineKeyboardButton(text="🚸𝙷𝙴𝙻𝙿", callback_data="help_back"),
+        InlineKeyboardButton(text="🙋‍♀️𝙰𝙳𝙳 𝙼𝙴", url="t.me/ansi_Ro_bot?startgroup=new"),        
     ],
 ]
 
@@ -372,33 +372,23 @@ def emli_about_callback(update, context):
     query = update.callback_query
     if query.data == "emli_":
         query.message.edit_text(
-            text="๏ I'm *Ansi*, a powerful group management bot built to help you manage your group easily."
-            "\n• I can restrict users."
-            "\n• I can greet users with customizable welcome messages and even set a group's rules."
-            "\n• I have an advanced anti-flood system."
-            "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
-            "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
-            "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Ansi's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for Ansi.",
+            text="๏ ɪ'ᴍ *[ᴀɴsɪ](https://t.me/ansi_Ro_Bot)*, ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ."
+            "\n• ɪ ᴄᴀɴ ʀᴇsᴛʀɪᴄᴛ ᴜsᴇʀs."
+            "\n• ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜsᴇʀs ᴡɪᴛʜ ᴄᴜsᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇssᴀɢᴇs ᴀɴᴅ ᴇᴠᴇɴ sᴇᴛ ᴀ ɢʀᴏᴜᴘ's ʀᴜʟᴇs."
+            "\n• ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ sʏsᴛᴇᴍ."
+            "\n• ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜsᴇʀs ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴs, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴs sᴜᴄʜ ᴀs ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ."
+            "\n• ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ sʏsᴛᴇᴍ, ʙʟᴀᴄᴋʟɪsᴛs, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇs ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅs."
+            "\n• ɪ ᴄʜᴇᴄᴋ ꜰᴏʀ ᴀᴅᴍɪɴs' ᴘᴇʀᴍɪssɪᴏɴs ʙᴇꜰᴏʀᴇ ᴇxᴇᴄᴜᴛɪɴɢ ᴀɴʏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴅ ᴍᴏʀᴇ sᴛᴜꜰꜰs"
+            "\n\n_ᴀɴsɪ's ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ ɢɴᴜ ɢᴇɴᴇʀᴀʟ ᴘᴜʙʟɪᴄ ʟɪᴄᴇɴsᴇ ᴠ3.0_"
+            "\n\n ᴄʟɪᴄᴋ ᴏɴ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ʙᴀsɪᴄ ʜᴇʟᴘ ꜰᴏʀ ᴀɴsɪ.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emli_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="emli_notes"),
+                    InlineKeyboardButton(text="✯𝙼𝙾𝙸-𝙲𝚁𝙴𝙰𝚃𝙾𝚁𝚂✯", callback_data="emli_credit"),
+                    InlineKeyboardButton(text="«𝙱𝙰𝙲𝙺", callback_data="emli_back"),
                  ],
-                 [
-                    InlineKeyboardButton(text="Support", callback_data="emli_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="emli_credit"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="About dev", callback_data="source_"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="emli_back"),
-                 ]
                 ]
             ),
         )
@@ -419,46 +409,48 @@ def emli_about_callback(update, context):
 
     elif query.data == "emli_admin":
         query.message.edit_text(
-            text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Ansi now ready to manage your group."
-            "\n\n*Admin Tools*"
-            "\nBasic Admin tools help you to protect and powerup your group."
-            "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
-            "\n\n*Greetings*"
-            "\nLets set a welcome message to welcome new users coming to your group."
-            "\nsend `/setwelcome [message]` to set a welcome message!",
+            text=f"「𝙼𝙾𝙸 𝙳𝙰𝙳 𝙸𝚉 𝙷𝙰𝚁𝙴 𝙶𝚄𝚈𝚂❤︎」!"
+            f"𝙽𝙰𝙼𝙴 : 𝙰𝙽𝙳𝚈✰"
+            𝚏"𝙸𝙼𝙰𝙶𝙴 : [𝙲𝙾𝙾𝙻 𝙱𝙾𝙸☆](https://t.me/its_pandit_Andy)",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emli_")]]
+                [[
+                   InlineKeyboardButton(text="𝙶𝙸𝚃-𝚉𝙾𝙽𝙴", url="https://github.com/BadshahAk"),
+                   InlineKeyboardButton(text="✵𝙱𝙰𝙲𝙺", callback_data="emli_credit"),
+                 ],
+                ],
             ),
         )
 
     elif query.data == "emli_notes":
         query.message.edit_text(
-            text=f"<b>๏ Setting up notes</b>"
-            f"\nYou can save message/media/audio or anything as notes"
-            f"\nto get a note simply use # at the beginning of a word"
-            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            text=f"「𝙼𝙾𝙸 𝙼𝙾𝙼 𝙸𝚉 𝙷𝙰𝚁𝙴 𝙶𝚄𝚈𝚂❤︎」!"
+            f"𝙽𝙰𝙼𝙴 : 𝙽𝙴𝙷𝙰✰"
+            𝚏"𝙸𝙼𝙰𝙶𝙴 : 𝙲𝙾𝙾𝙻 𝙶𝙸𝚁𝙻☆",",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emli_")]]
+                [[
+                   InlineKeyboardButton(text="❤︎𝙼𝙾𝙼♡︎", url="https://t.me/Its_Andy_ki_Jaan"),
+                   InlineKeyboardButton(text="✵𝙱𝙰𝙲𝙺", callback_data="emli_credit"),
+                 ],
+                ],
             ),
         )
     elif query.data == "emli_support":
         query.message.edit_text(
-            text="*๏ Ansi support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Ansi.",
+            text="*๏ 𝙰𝙽𝚂𝙷𝙸 𝚂𝚄𝙿𝙿𝙾𝚁𝚃♲︎︎︎❣︎*"
+            "\n𝙹𝚘𝚒𝚗 𝙼𝚢 𝚂𝚞𝚙𝚙𝚘𝚛𝚝 𝙶𝚛𝚘𝚞𝚙/𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝚏𝚘𝚛 𝚜𝚎𝚎 𝚘𝚛 𝚛𝚎𝚙𝚘𝚛𝚝 𝚊 𝚙𝚛𝚘𝚋𝚕𝚎𝚖 𝚘𝚗 𝙰𝚗𝚜𝚒.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/CHATTINGxGROUP"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/ansi_updates"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/ansi_support"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/ansi_updates"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emli_"),
-                 
+                    InlineKeyboardButton(text="Cʜᴀᴛᴛɪɴɢ-ʜᴜʙ", url="https://t.me/CHATTINGxGROUP"),
+                    InlineKeyboardButton(text="«Bᴀᴄᴋ", callback_data="emli_back"),
                  ]
                 ]
             ),
@@ -467,19 +459,18 @@ def emli_about_callback(update, context):
 
     elif query.data == "emli_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Ansi</b>\n"
-            f"\nHere Developers Making The Ansi",
+            text=f"「𝙲𝚁𝙴𝙰𝚃𝙾𝚁 𝙾𝙵 𝙰𝙽𝚂𝙷𝙸🙋‍♀️」\n"
+            f"\n𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙼𝙾𝙼 𝙳𝙰𝙳 𝙶𝚄𝚈𝚂 𝙶𝙾 𝙽𝙳 𝚂𝙴𝙴 𝚃𝙷𝙴𝚁𝙴🙈🙈💕"
+            f"\n𝚃𝙰𝙿 𝙾𝙽 𝙱𝚄𝚃𝚃𝙾𝙽 𝙽𝙳 𝚂𝙴𝙴 𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁!!",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Andy", url="t.me/its_pandit_Andy"),
+                    InlineKeyboardButton(text="❤︎𝙳𝙰𝙳♡︎", callback_data="emli_admin"),
+                    InlineKeyboardButton(text="♡︎𝙼𝙾𝙼❤︎", callback_data="emli_notes"),
+                    InlineKeyboardButton(text="«𝙱𝙰𝙲𝙺", callback_data="emli_"),
                  ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="emli_"),
-                 
-                 ]
-                ]
+                ],
             ),
         )
 
